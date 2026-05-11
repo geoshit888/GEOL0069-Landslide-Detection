@@ -77,10 +77,6 @@ Key spectral indices used in this project include:
 
 ## Getting Started
 
-**Requirements**
-
-**Running the Notebook**
-
 1. Download the .ipynb notebook from this repository
 2. Upload the notebook to Google Colab or run locally using Jupyter Notebook
 3. Authenticate Google Earth Engine
