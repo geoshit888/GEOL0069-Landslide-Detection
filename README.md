@@ -7,8 +7,7 @@ This project applies unsupervised machine learning and Sentinel-2 satellite imag
 
 <img src="images/Research_area.png" width="300">
 Figure 1: Area of Interest circle (red polygon)
-
-
+  
 Using Google Earth Engine and K-means clustering, the workflow analyses yearly satellite composites and spectral indices such as NDVI, NBR, NDMI and BSI to automatically classify landslide candidate areas without requiring manually labelled training data. The project demonstrates how freely available satellite imagery and cloud-based geospatial analysis can support rapid environmental assessment in mountainous hazard-prone regions.
 
 ## Background
