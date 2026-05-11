@@ -5,6 +5,8 @@
 
 This project applies unsupervised machine learning and Sentinel-2 satellite imagery to identify potential landslide areas in the Hualien–Taroko region of eastern Taiwan between 2021 and 2025. The study aims to investigate how surface conditions changed before and after the 2024 Hualien earthquake, with particular focus on earthquake-triggered landslides and newly exposed bare ground.
 
+![Image](images/Research_area.png)
+
 Using Google Earth Engine and K-means clustering, the workflow analyses yearly satellite composites and spectral indices such as NDVI, NBR, NDMI and BSI to automatically classify landslide candidate areas without requiring manually labelled training data. The project demonstrates how freely available satellite imagery and cloud-based geospatial analysis can support rapid environmental assessment in mountainous hazard-prone regions.
 
 ## Background
