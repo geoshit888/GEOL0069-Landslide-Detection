@@ -74,35 +74,14 @@ Key spectral indices used in this project include:
 
 ## Getting Started
 
-## Requirements
+**Requirements**
 
-This notebook was designed for:
+**Running the Notebook**
 
-- Google Colab
-- Python 3
-- Google Earth Engine
-- geemap
-- matplotlib
-- numpy
-- pandas
-
----
-
-## Running the Notebook
-
-### 1. Download the notebook
-
-Download the `.ipynb` notebook from this repository.
-
-### 2. Open in Google Colab
-
-Upload the notebook to Google Colab or run locally using Jupyter Notebook.
-
-### 3. Authenticate Google Earth Engine
-
-The notebook will prompt you to authenticate your Google Earth Engine account.
-
-### 4. Run all cells
+1. Download the .ipynb notebook from this repository.
+2. Upload the notebook to Google Colab or run locally using Jupyter Notebook.
+3. Authenticate Google Earth Engine
+5. Run all cells
 
 The workflow will:
 
@@ -115,23 +94,19 @@ The workflow will:
 
 ---
 
-# How the Notebook Works
+## How the Notebook Works
 
-## 1. Data Collection
+**1. Data Collection**
 
 Sentinel-2 Level-2A surface reflectance imagery is retrieved from Google Earth Engine for each year between 2021 and 2025.
 
 Clouds and cloud shadows are masked using the Sentinel-2 Scene Classification Layer (SCL).
 
----
-
-## 2. Annual Composite Generation
+**2. Annual Composite Generation**
 
 For each year, median composites are generated to reduce cloud contamination and create representative annual images.
 
----
-
-## 3. Spectral Index Calculation
+**3. Spectral Index Calculation**
 
 Several spectral indices are calculated:
 
@@ -143,15 +118,11 @@ Several spectral indices are calculated:
 
 Temporal change metrics (`dNDVI`, `dNBR`, `dBSI`) are also computed by comparing each year with the previous year.
 
----
-
-## 4. Topographic Analysis
+**4. Topographic Analysis**
 
 Elevation and slope are derived from DEM data to help distinguish landslide-prone terrain.
 
----
-
-## 5. K-means Clustering
+**5. K-means Clustering**
 
 Pixels are grouped into clusters using K-means clustering. Clusters with characteristics such as:
 
@@ -162,15 +133,11 @@ Pixels are grouped into clusters using K-means clustering. Clusters with charact
 
 are interpreted as landslide-like clusters.
 
----
-
-## 6. Landslide Candidate Mask Generation
+**6. Landslide Candidate Mask Generation**
 
 Additional threshold filters are applied to reduce false positives and produce yearly landslide candidate masks.
 
----
-
-## 7. Area Calculation and Change Detection
+**7. Area Calculation and Change Detection**
 
 The notebook calculates:
 
@@ -183,22 +150,9 @@ Results are exported as:
 - PNG quicklook maps
 - GeoTIFF files
 
----
-
-# Results
+## Results
 
 The workflow successfully identified areas with strong spectral and topographic signatures consistent with landslide activity. Increased landslide candidate area was observed following the 2024 Hualien earthquake, particularly in steep mountainous terrain around Taroko Gorge.
 
 The unsupervised approach provides a rapid and scalable method for preliminary landslide detection using freely available satellite imagery. However, further validation using official landslide inventories or high-resolution imagery would be required for operational hazard assessment.
 
----
-
-# Repository Structure
-
-```text
-.
-├── notebooks/
-├── results/
-├── csv/
-├── maps/
-├── README.md
