@@ -9,7 +9,7 @@ Using Google Earth Engine and K-means clustering, the workflow analyses yearly s
 
 
 <img src="images/Research_area.png" width="300">
-Figure 1: Area of Interest circle (red polygon)         
+Figure 1: Area of Interest (red polygon)         
 
 
 ## Background
