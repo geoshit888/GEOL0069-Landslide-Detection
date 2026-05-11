@@ -11,7 +11,7 @@ Using Google Earth Engine and K-means clustering, the workflow analyses yearly s
 
 **Why This Topic?**
 
-Taiwan is one of the most landslide-prone regions in the world due to its steep mountainous terrain, active tectonic setting, intense rainfall and frequent typhoons (Lin et al., 2004). Earthquakes can destabilise hillslopes, trigger rockfalls and increase sediment transport, causing widespread geomorphic change across mountain catchments.
+Taiwan is one of the most landslide-prone regions in the world due to its steep mountainous terrain, active tectonic setting, intense rainfall and frequent typhoons (Lin et al., 2004). Earthquakes can destabilise hillslopes, trigger rockfalls and increase sediment transport, causing widespread geomorphic change across mountain catchments. The Taroko region of eastern Taiwan is characterised by steep relief, narrow valleys and highly fractured metamorphic rocks. Combined with intense rainfall from typhoons and frequent seismic activity, these conditions make the region highly susceptible to landslides and debris flows.
 
 The 3 April 2024 Hualien earthquake (Mw 7.4) generated extensive slope failures across eastern Taiwan, particularly within and around Taroko National Park. Detecting these changes rapidly is important for hazard assessment, infrastructure monitoring and environmental management.
 
@@ -22,12 +22,6 @@ Remote sensing provides an effective way to monitor landslide activity over larg
 - Lin, G. W., Chen, H., Hovius, N., Horng, M. J., Dadson, S., Meunier, P., & Lines, M. (2004). Effects of earthquake and cyclone sequencing on landsliding and fluvial sediment transfer in a mountain catchment. *Earth Surface Processes and Landforms*, 33(9), 1354–1373.
 - Keefer, D. K. (1984). Landslides caused by earthquakes. *Geological Society of America Bulletin*, 95(4), 406–421.
 - Dadson, S. J., Hovius, N., Chen, H., Dade, W. B., Hsieh, M. L., Willett, S. D., et al. (2004). Earthquake-triggered increase in sediment delivery from an active mountain belt. *Geology*, 32(8), 733–736.
-
-**Taroko and Hualien Region**
-
-The Taroko region of eastern Taiwan is characterised by steep relief, narrow valleys and highly fractured metamorphic rocks. Combined with intense rainfall from typhoons and frequent seismic activity, these conditions make the region highly susceptible to landslides and debris flows.
-
-The 2024 Hualien earthquake caused widespread damage to roads, tunnels and slopes within Taroko Gorge. Many hillslopes experienced rockfalls and vegetation loss, making the area suitable for remote sensing-based landslide detection.
 
 **Why Use K-means and Unsupervised Classification**
 
