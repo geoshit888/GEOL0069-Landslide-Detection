@@ -94,13 +94,13 @@ The workflow will:
 
 This notebook detects and maps potential landslide areas in the Taroko Gorge / Hualien region using Sentinel-2 satellite imagery, spectral indices, topographic data, and annual change detection. The workflow compares conditions from 2021 to 2025 to identify both existing landslide candidates and newly developed landslide candidates, especially after the 2024 Hualien earthquake.
 
-### 1. Study Area Definition
+**1. Study Area Definition**
 
 The notebook first defines the study area around Taroko Gorge, Hualien, Taiwan. This area is selected because it contains steep mountainous terrain where earthquake-triggered landslides are likely to occur.
 
 The Area of Interest (AOI) is used to clip all satellite images, topographic layers, classification outputs, and exported results.
 
-### 2. Sentinel-2 Image Collection
+**2. Sentinel-2 Image Collection**
 
 Sentinel-2 surface reflectance imagery is loaded for each target year from 2021 to 2025. The notebook filters the image collection by:
 
@@ -111,13 +111,13 @@ Sentinel-2 surface reflectance imagery is loaded for each target year from 2021 
 
 Cloud masking is then applied to reduce the influence of clouds and cloud shadows. A median composite image is created for each year to represent the general surface condition during that period.
 
-### 3. RGB Visualisation
+**3. RGB Visualisation**
 
 For each year, the notebook generates RGB images using Sentinel-2 visible bands. These RGB images are used to visually compare surface changes through time.
 
 They help show where bare ground, vegetation loss, exposed slopes, and possible landslide scars appear in the landscape.
 
-### 4. Spectral Index Calculation
+**4. Spectral Index Calculation**
 
 Several spectral indices are calculated from the Sentinel-2 bands to highlight landslide-related surface characteristics:
 
@@ -129,7 +129,7 @@ Several spectral indices are calculated from the Sentinel-2 bands to highlight l
 
 Landslides are expected to show low vegetation indices and high bare-soil values because vegetation is often removed and fresh rock or soil becomes exposed.
 
-### 5. Topographic Data Processing
+**5. Topographic Data Processing**
 
 The notebook also adds topographic information, including:
 
@@ -138,13 +138,13 @@ The notebook also adds topographic information, including:
 
 This is important because landslides are more likely to occur on steep terrain. By combining spectral and topographic information, the workflow can better separate possible landslides from flat bare areas such as riverbeds, roads, or urban surfaces.
 
-### 6. Feature Image Creation
+**6. Feature Image Creation**
 
 For each year, the notebook combines the spectral indices and topographic layers into a multi-band feature image. These feature images are used as input for landslide candidate detection.
 
 Each pixel contains information about vegetation, bare ground, moisture, slope, elevation, and annual change.
 
-### 7. Landslide Candidate Detection
+**7. Landslide Candidate Detection**
 
 The notebook identifies landslide candidate pixels based on their spectral and topographic characteristics. Areas are more likely to be classified as landslide candidates when they show:
 
@@ -159,7 +159,7 @@ The output for each year is a binary landslide mask:
 - `1` = landslide candidate
 - `0` = non-landslide area
 
-### 8. New Landslide Candidate Detection
+**8. New Landslide Candidate Detection**
 
 The notebook also calculates **new landslide candidates** by comparing each year with the previous year or baseline condition.
 
@@ -167,7 +167,7 @@ This helps distinguish areas that were already bare or disturbed from areas that
 
 This is useful for identifying changes after major triggering events such as the 2024 Hualien earthquake.
 
-### 9. Annual Area Calculation
+**9. Annual Area Calculation**
 
 The notebook calculates the total area of landslide candidates for each year. It also calculates the area of new landslide candidates.
 
@@ -175,7 +175,7 @@ These values are summarised in charts to show how landslide candidate area chang
 
 The results show an increase in landslide candidate area after the 2024 Hualien earthquake, especially in steep mountainous terrain around Taroko Gorge.
 
-### 10. Map Visualisation
+**10. Map Visualisation**
 
 The notebook produces several map outputs for each year:
 
@@ -186,34 +186,9 @@ The notebook produces several map outputs for each year:
 
 These visualisations make it easier to compare annual changes and identify where landslide activity may have increased.
 
-### 11. Exporting Results
+**11. Exporting Results**
 
-The final section exports the results for further use. Outputs can include:
-
-- PNG map figures
-- GeoTIFF landslide masks
-- Annual landslide candidate maps
-- New landslide candidate maps
-
-The exported GeoTIFF files can be opened in GIS software such as QGIS or ArcGIS for further analysis, validation, and map production.
-
-### 12. Overall Workflow
-
-In summary, the notebook follows this workflow:
-
-1. Define the study area
-2. Load Sentinel-2 imagery for each year
-3. Apply cloud masking and create annual composites
-4. Calculate spectral indices
-5. Add slope and elevation data
-6. Generate annual feature images
-7. Detect landslide candidate pixels
-8. Identify newly developed landslide candidates
-9. Calculate annual landslide candidate area
-10. Visualise the results
-11. Export maps and data for GIS analysis
-
-This workflow provides a repeatable method for monitoring possible landslide activity through time using open-access satellite data and Google Earth Engine.
+The final section exports the results for further use. 
 
 ## Results
 
