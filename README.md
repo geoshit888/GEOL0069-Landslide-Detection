@@ -155,3 +155,5 @@ The workflow successfully identified areas with strong spectral and topographic 
 
 The unsupervised approach provides a rapid and scalable method for preliminary landslide detection using freely available satellite imagery. However, further validation using official landslide inventories or high-resolution imagery would be required for operational hazard assessment.
 
+[View the PDF](docs/result.pdf)
+
