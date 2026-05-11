@@ -24,28 +24,11 @@ Remote sensing provides an effective way to monitor landslide activity over larg
 
 ---
 
-**Why Use K-means and Unsupervised Classification**
+**k means clustering for unsupervised learning**
 
-Many landslide mapping studies rely on supervised machine learning, which requires manually labelled training datasets. However, accurate landslide inventories are often unavailable immediately after a disaster.
+K-means clustering is an unsupervised machine-learning method that groups data into a chosen number of clusters based on similarity. It works by assigning each data point to the nearest cluster centre, then repeatedly updating the cluster centres until the groups become stable (MacQueen, 1967). Because it does not require labelled training data, K-means is useful when the exact land-cover classes are unknown. 
 
-This project therefore uses **K-means clustering**, an unsupervised machine learning algorithm that groups pixels with similar spectral characteristics into clusters automatically. By combining spectral indices, topographic information and temporal change metrics, clusters with landslide-like properties can be identified without manually labelled data.
-
-Advantages of the unsupervised approach include:
-
-- No need for pre-labelled training data
-- Rapid implementation after hazard events
-- Ability to process large areas efficiently
-- Suitable for exploratory or preliminary hazard mapping
-
-However, unsupervised classification may also produce false positives, such as riverbeds, roads or bare agricultural land.
-
-**References**
-
-- Jain, A. K. (2010). Data clustering: 50 years beyond K-means. *Pattern Recognition Letters*, 31(8), 651–666.
-- MacQueen, J. (1967). Some methods for classification and analysis of multivariate observations. *Proceedings of the Fifth Berkeley Symposium on Mathematical Statistics and Probability*, 281–297.
-
-**Figure**
-Example workflow showing how K-means clustering groups pixels with similar spectral and topographic characteristics into clusters.
+In this project, K-means clustering is applied to Sentinel-2 spectral indices, including NDVI, NBR, NDMI and BSI, together with topographic information such as slope and elevation. Pixels with similar spectral and terrain characteristics are grouped into clusters, and clusters showing low vegetation, low moisture and high bare-soil signals are interpreted as possible landslide or newly exposed ground areas. Therefore, K-means is used as an exploratory method to identify landslide candidate areas in Taroko before and after the 2024 Hualien earthquake.
 
 ---
 
@@ -190,5 +173,6 @@ The two charts show the total landslide candidate area and the newly detected la
 The unsupervised approach provides a rapid and scalable method for preliminary landslide detection using freely available satellite imagery. However, further validation using official landslide inventories or high-resolution imagery would be required for operational hazard assessment.
 
 ## References
+- Kuo, C.-W., Brierley, G. (2013). The influence of landscape configuration upon patterns of sediment storage in a highly connected river system. Geomorphology, 180-181, 255–266. 10.1016/j.geomorph.2012.10.015.
 - Lin, G.-W., Chen, H., Hovius, N., Horng, M.-J., Dadson, S., Meunier, P., & Lines, M. (2008). Effects of earthquake and cyclone sequencing on landsliding and fluvial sediment transfer in a mountain catchment. Earth Surface Processes and Landforms, 33(9), 1354-1373. https://doi.org/10.1002/esp.1716
-- Kuo, C.-W., Brierley, G. (2013). The influence of landscape configuration upon patterns of sediment storage in a highly connected river system. Geomorphology, 180-181, 255–266. 10.1016/j.geomorph.2012.10.015. 
+- MacQueen, J. (1967). Some methods for classification and analysis of multivariate observations. In L. M. Le Cam & J. Neyman (Eds.), Proceedings of the Fifth Berkeley Symposium on Mathematical Statistics and Probability (Vol. 1, pp. 281–297). University of California Press.
