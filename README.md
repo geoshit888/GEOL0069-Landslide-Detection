@@ -19,7 +19,7 @@ The 3 April 2024 Hualien earthquake (Mw 7.4) generated extensive slope failures 
 
 Remote sensing provides an effective way to monitor landslide activity over large areas where field surveys may be difficult or dangerous. This project therefore explores whether unsupervised classification of Sentinel-2 imagery can identify likely landslide areas and quantify landscape change through time.
 
-### References
+**References**
 
 - Lin, G. W., Chen, H., Hovius, N., Horng, M. J., Dadson, S., Meunier, P., & Lines, M. (2004). Effects of earthquake and cyclone sequencing on landsliding and fluvial sediment transfer in a mountain catchment. *Earth Surface Processes and Landforms*, 33(9), 1354–1373.
 - Keefer, D. K. (1984). Landslides caused by earthquakes. *Geological Society of America Bulletin*, 95(4), 406–421.
