@@ -151,9 +151,13 @@ Results are exported as:
 
 ## Results
 
-The workflow successfully identified areas with strong spectral and topographic signatures consistent with landslide activity. Increased landslide candidate area was observed following the 2024 Hualien earthquake, particularly in steep mountainous terrain around Taroko Gorge.
-
-The unsupervised approach provides a rapid and scalable method for preliminary landslide detection using freely available satellite imagery. However, further validation using official landslide inventories or high-resolution imagery would be required for operational hazard assessment.
+The figure below shows the results from 2021 to 2025. The first row presents the Sentinel-2 RGB composites, the second row shows the detected landslide candidates overlaid on the RGB images, and the third row presents the binary landslide masks. The workflow successfully identified areas with strong spectral and topographic characteristics consistent with landslide activity. These areas are mainly located on steep mountainous slopes. An increase in landslide candidate area was observed after the 2024 Hualien earthquake, suggesting that the earthquake had a significant impact on slope instability and landslide occurrence in the study area. However, because this method is unsupervised, the mapped areas should be interpreted as landslide candidates rather than confirmed landslides.
 
 ![Image](images/results.png)
+
+The two charts show the total landslide candidate area and the newly detected landslide candidate area for each year. The total candidate area represents all pixels classified as potential landslides in a given year, whilst the new candidate area represents locations that were detected in the current year but were not identified in the previous year. The new candidate analysis is important because it highlights newly developed or recently exposed landslide features, rather than areas that remained persistently bare or unstable across multiple years. This helps distinguish recent slope failures, particularly those potentially triggered by extreme events such as the 2024 Hualien earthquake, from older pre-existing landslide scars or long-term exposed surfaces.
+
+
+
+The unsupervised approach provides a rapid and scalable method for preliminary landslide detection using freely available satellite imagery. However, further validation using official landslide inventories or high-resolution imagery would be required for operational hazard assessment.
 
