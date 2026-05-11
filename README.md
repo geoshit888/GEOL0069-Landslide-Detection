@@ -7,8 +7,6 @@ This project applies unsupervised machine learning and Sentinel-2 satellite imag
 
 Using Google Earth Engine and K-means clustering, the workflow analyses yearly satellite composites and spectral indices such as NDVI, NBR, NDMI and BSI to automatically classify landslide candidate areas without requiring manually labelled training data. The project demonstrates how freely available satellite imagery and cloud-based geospatial analysis can support rapid environmental assessment in mountainous hazard-prone regions.
 
----
-
 # Background
 
 ## Why This Topic?
@@ -25,17 +23,13 @@ Remote sensing provides an effective way to monitor landslide activity over larg
 - Keefer, D. K. (1984). Landslides caused by earthquakes. *Geological Society of America Bulletin*, 95(4), 406–421.
 - Dadson, S. J., Hovius, N., Chen, H., Dade, W. B., Hsieh, M. L., Willett, S. D., et al. (2004). Earthquake-triggered increase in sediment delivery from an active mountain belt. *Geology*, 32(8), 733–736.
 
----
-
-# Taroko and Hualien Region
+## Taroko and Hualien Region
 
 The Taroko region of eastern Taiwan is characterised by steep relief, narrow valleys and highly fractured metamorphic rocks. Combined with intense rainfall from typhoons and frequent seismic activity, these conditions make the region highly susceptible to landslides and debris flows.
 
 The 2024 Hualien earthquake caused widespread damage to roads, tunnels and slopes within Taroko Gorge. Many hillslopes experienced rockfalls and vegetation loss, making the area suitable for remote sensing-based landslide detection.
 
----
-
-# Why Use K-means and Unsupervised Classification?
+## Why Use K-means and Unsupervised Classification?
 
 Many landslide mapping studies rely on supervised machine learning, which requires manually labelled training datasets. However, accurate landslide inventories are often unavailable immediately after a disaster.
 
@@ -50,12 +44,10 @@ Advantages of the unsupervised approach include:
 
 However, unsupervised classification may also produce false positives, such as riverbeds, roads or bare agricultural land.
 
-### References
+**References**
 
 - Jain, A. K. (2010). Data clustering: 50 years beyond K-means. *Pattern Recognition Letters*, 31(8), 651–666.
 - MacQueen, J. (1967). Some methods for classification and analysis of multivariate observations. *Proceedings of the Fifth Berkeley Symposium on Mathematical Statistics and Probability*, 281–297.
-
----
 
 # Figure: Example of K-means Clustering
 
@@ -65,9 +57,7 @@ However, unsupervised classification may also produce false positives, such as r
 
 Example workflow showing how K-means clustering groups pixels with similar spectral and topographic characteristics into clusters.
 
----
-
-# Sentinel-2 Satellite Data
+## Sentinel-2 Satellite Data
 
 This project uses imagery from the Sentinel-2 mission operated by the European Space Agency (ESA). Sentinel-2 provides multispectral optical imagery with spatial resolutions of 10–20 m and revisit times of approximately 5 days.
 
