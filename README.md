@@ -68,8 +68,6 @@ Key spectral indices used in this project include:
 **References**
 - Drusch, M., Del Bello, U., Carlier, S., Colin, O., Fernandez, V., Gascon, F., et al. (2012). Sentinel-2: ESA’s optical high-resolution mission for GMES operational services. *Remote Sensing of Environment*, 120, 25–36.
 
----
-
 **Figure of Sentinel-2**
 
 ## Getting Started
@@ -93,61 +91,130 @@ The workflow will:
 - Export maps and CSV files
 
 ---
-
 ## How the Notebook Works
 
-**1. Data Collection**
+This notebook detects and maps potential landslide areas in the Taroko Gorge / Hualien region using Sentinel-2 satellite imagery, spectral indices, topographic data, and annual change detection. The workflow compares conditions from 2021 to 2025 to identify both existing landslide candidates and newly developed landslide candidates, especially after the 2024 Hualien earthquake.
 
-Sentinel-2 Level-2A surface reflectance imagery is retrieved from Google Earth Engine for each year between 2021 and 2025.
+### 1. Study Area Definition
 
-Clouds and cloud shadows are masked using the Sentinel-2 Scene Classification Layer (SCL).
+The notebook first defines the study area around Taroko Gorge, Hualien, Taiwan. This area is selected because it contains steep mountainous terrain where earthquake-triggered landslides are likely to occur.
 
-**2. Annual Composite Generation**
+The Area of Interest (AOI) is used to clip all satellite images, topographic layers, classification outputs, and exported results.
 
-For each year, median composites are generated to reduce cloud contamination and create representative annual images.
+### 2. Sentinel-2 Image Collection
 
-**3. Spectral Index Calculation**
+Sentinel-2 surface reflectance imagery is loaded for each target year from 2021 to 2025. The notebook filters the image collection by:
 
-Several spectral indices are calculated:
+- Study area
+- Date range
+- Cloud percentage
+- Required spectral bands
 
-- NDVI
-- NBR
-- NDMI
-- NDWI
-- BSI
+Cloud masking is then applied to reduce the influence of clouds and cloud shadows. A median composite image is created for each year to represent the general surface condition during that period.
 
-Temporal change metrics (`dNDVI`, `dNBR`, `dBSI`) are also computed by comparing each year with the previous year.
+### 3. RGB Visualisation
 
-**4. Topographic Analysis**
+For each year, the notebook generates RGB images using Sentinel-2 visible bands. These RGB images are used to visually compare surface changes through time.
 
-Elevation and slope are derived from DEM data to help distinguish landslide-prone terrain.
+They help show where bare ground, vegetation loss, exposed slopes, and possible landslide scars appear in the landscape.
 
-**5. K-means Clustering**
+### 4. Spectral Index Calculation
 
-Pixels are grouped into clusters using K-means clustering. Clusters with characteristics such as:
+Several spectral indices are calculated from the Sentinel-2 bands to highlight landslide-related surface characteristics:
 
-- low vegetation
-- high bare soil exposure
-- strong negative vegetation change
-- steep slope
+- **NDVI**: identifies vegetation condition
+- **NBR**: highlights vegetation disturbance and exposed surfaces
+- **NDMI**: represents surface moisture conditions
+- **BSI**: highlights bare soil and exposed ground
+- **dNDVI / dNBR / dBSI**: measure change compared with the reference year
 
-are interpreted as landslide-like clusters.
+Landslides are expected to show low vegetation indices and high bare-soil values because vegetation is often removed and fresh rock or soil becomes exposed.
 
-**6. Landslide Candidate Mask Generation**
+### 5. Topographic Data Processing
 
-Additional threshold filters are applied to reduce false positives and produce yearly landslide candidate masks.
+The notebook also adds topographic information, including:
 
-**7. Area Calculation and Change Detection**
+- Elevation
+- Slope
 
-The notebook calculates:
+This is important because landslides are more likely to occur on steep terrain. By combining spectral and topographic information, the workflow can better separate possible landslides from flat bare areas such as riverbeds, roads, or urban surfaces.
 
-- yearly candidate landslide area
-- year-to-year new candidate landslide area
+### 6. Feature Image Creation
 
-Results are exported as:
+For each year, the notebook combines the spectral indices and topographic layers into a multi-band feature image. These feature images are used as input for landslide candidate detection.
 
-- CSV tables
-- PNG 
+Each pixel contains information about vegetation, bare ground, moisture, slope, elevation, and annual change.
+
+### 7. Landslide Candidate Detection
+
+The notebook identifies landslide candidate pixels based on their spectral and topographic characteristics. Areas are more likely to be classified as landslide candidates when they show:
+
+- Low vegetation cover
+- High bare soil exposure
+- Strong negative vegetation change
+- Steep slope
+- Mountainous terrain
+
+The output for each year is a binary landslide mask:
+
+- `1` = landslide candidate
+- `0` = non-landslide area
+
+### 8. New Landslide Candidate Detection
+
+The notebook also calculates **new landslide candidates** by comparing each year with the previous year or baseline condition.
+
+This helps distinguish areas that were already bare or disturbed from areas that newly appeared as potential landslides. For example, if a pixel is classified as a landslide candidate in 2024 but was not classified as one in 2023, it can be counted as a new candidate area.
+
+This is useful for identifying changes after major triggering events such as the 2024 Hualien earthquake.
+
+### 9. Annual Area Calculation
+
+The notebook calculates the total area of landslide candidates for each year. It also calculates the area of new landslide candidates.
+
+These values are summarised in charts to show how landslide candidate area changes from 2021 to 2025.
+
+The results show an increase in landslide candidate area after the 2024 Hualien earthquake, especially in steep mountainous terrain around Taroko Gorge.
+
+### 10. Map Visualisation
+
+The notebook produces several map outputs for each year:
+
+- RGB satellite image
+- Landslide candidates overlaid on RGB imagery
+- Binary landslide mask
+- New landslide candidate mask
+
+These visualisations make it easier to compare annual changes and identify where landslide activity may have increased.
+
+### 11. Exporting Results
+
+The final section exports the results for further use. Outputs can include:
+
+- PNG map figures
+- GeoTIFF landslide masks
+- Annual landslide candidate maps
+- New landslide candidate maps
+
+The exported GeoTIFF files can be opened in GIS software such as QGIS or ArcGIS for further analysis, validation, and map production.
+
+### 12. Overall Workflow
+
+In summary, the notebook follows this workflow:
+
+1. Define the study area
+2. Load Sentinel-2 imagery for each year
+3. Apply cloud masking and create annual composites
+4. Calculate spectral indices
+5. Add slope and elevation data
+6. Generate annual feature images
+7. Detect landslide candidate pixels
+8. Identify newly developed landslide candidates
+9. Calculate annual landslide candidate area
+10. Visualise the results
+11. Export maps and data for GIS analysis
+
+This workflow provides a repeatable method for monitoring possible landslide activity through time using open-access satellite data and Google Earth Engine.
 
 ## Results
 
