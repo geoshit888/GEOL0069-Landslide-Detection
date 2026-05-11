@@ -147,8 +147,7 @@ The notebook calculates:
 Results are exported as:
 
 - CSV tables
-- PNG quicklook maps
-- GeoTIFF files
+- PNG 
 
 ## Results
 
