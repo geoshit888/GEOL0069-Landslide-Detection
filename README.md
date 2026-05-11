@@ -1,5 +1,5 @@
 # Landslide Detection Using Unsupervised Classification
-### A Case Study in Hualien–Taroko, Taiwan (2021–2025)
+### A Case Study in Taroko, Hualien, Taiwan (2021–2025)
 
 ## Introduction
 
@@ -61,11 +61,11 @@ In this project, K-means clustering is applied to Sentinel-2 spectral indices, i
 
 ## How the Notebook Works
 
-This notebook detects and maps potential landslide areas in the Taroko Gorge / Hualien region using Sentinel-2 satellite imagery, spectral indices, topographic data, and annual change detection. The workflow compares conditions from 2021 to 2025 to identify both existing landslide candidates and newly developed landslide candidates, especially after the 2024 Hualien earthquake.
+This notebook detects and maps potential landslide areas in the Taroko region using Sentinel-2 satellite imagery, spectral indices, topographic data, and annual change detection. The workflow compares conditions from 2021 to 2025 to identify both existing landslide candidates and newly developed landslide candidates, especially after the 2024 Hualien earthquake.
 
 **1. Study Area Definition**
 
-The notebook first defines the study area around Taroko Gorge, Hualien, Taiwan. This area is selected because it contains steep mountainous terrain where earthquake-triggered landslides are likely to occur.
+The notebook first defines the study area around Taroko, Hualien, Taiwan. This area is selected because it contains steep mountainous terrain where earthquake-triggered landslides are likely to occur.
 
 The Area of Interest (AOI) is used to clip all satellite images, topographic layers, classification outputs, and exported results.
 
@@ -142,7 +142,7 @@ The notebook calculates the total area of landslide candidates for each year. It
 
 These values are summarised in charts to show how landslide candidate area changes from 2021 to 2025.
 
-The results show an increase in landslide candidate area after the 2024 Hualien earthquake, especially in steep mountainous terrain around Taroko Gorge.
+The results show an increase in landslide candidate area after the 2024 Hualien earthquake, especially in steep mountainous terrain.
 
 **10. Map Visualisation**
 
