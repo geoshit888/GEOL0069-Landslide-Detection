@@ -76,19 +76,10 @@ Key spectral indices used in this project include:
 
 **Running the Notebook**
 
-1. Download the .ipynb notebook from this repository.
-2. Upload the notebook to Google Colab or run locally using Jupyter Notebook.
+1. Download the .ipynb notebook from this repository
+2. Upload the notebook to Google Colab or run locally using Jupyter Notebook
 3. Authenticate Google Earth Engine
 5. Run all cells
-
-The workflow will:
-
-- Download and preprocess Sentinel-2 imagery
-- Generate annual composites
-- Calculate spectral indices
-- Perform K-means clustering
-- Detect landslide candidate areas
-- Export maps and CSV files
 
 ## How the Notebook Works
 
