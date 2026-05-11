@@ -23,6 +23,8 @@ Remote sensing provides an effective way to monitor landslide activity over larg
 - Keefer, D. K. (1984). Landslides caused by earthquakes. *Geological Society of America Bulletin*, 95(4), 406–421.
 - Dadson, S. J., Hovius, N., Chen, H., Dade, W. B., Hsieh, M. L., Willett, S. D., et al. (2004). Earthquake-triggered increase in sediment delivery from an active mountain belt. *Geology*, 32(8), 733–736.
 
+---
+
 **Why Use K-means and Unsupervised Classification**
 
 Many landslide mapping studies rely on supervised machine learning, which requires manually labelled training datasets. However, accurate landslide inventories are often unavailable immediately after a disaster.
