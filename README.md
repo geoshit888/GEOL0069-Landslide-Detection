@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This project applies unsupervised machine learning and Sentinel-2 satellite imagery to identify potential landslide areas in the Hualien–Taroko region of eastern Taiwan between 2021 and 2025 (**Figure 1**). The study aims to investigate how surface conditions changed before and after the 2024 Hualien earthquake, with particular focus on earthquake-triggered landslides and newly exposed bare ground.
+This project applies unsupervised machine learning and Sentinel-2 satellite imagery to identify potential landslide areas in Taroko, eastern Taiwan between 2021 and 2025 (**Figure 1**). The study aims to investigate how surface conditions changed before and after the 2024 Hualien earthquake, with particular focus on earthquake-triggered landslides and newly exposed bare ground.
 
 Using Google Earth Engine and K-means clustering, the workflow analyses yearly satellite composites and spectral indices such as NDVI, NBR, NDMI and BSI to automatically classify landslide candidate areas without requiring manually labelled training data. The project demonstrates how freely available satellite imagery and cloud-based geospatial analysis can support rapid environmental assessment in mountainous hazard-prone regions.
 
@@ -16,17 +16,11 @@ Figure 1: Area of Interest (red polygon)
 
 **Why This Topic?**
 
-Taiwan is one of the most landslide-prone regions in the world due to its steep mountainous terrain, active tectonic setting, intense rainfall and frequent typhoons (Lin et al., 2004). Earthquakes can destabilise hillslopes, trigger rockfalls and increase sediment transport, causing widespread geomorphic change across mountain catchments. The Taroko region of eastern Taiwan is characterised by steep relief, narrow valleys and highly fractured metamorphic rocks. Combined with intense rainfall from typhoons and frequent seismic activity, these conditions make the region highly susceptible to landslides and debris flows.
+Taiwan is one of the most landslide-prone regions in the world due to its steep mountainous terrain, active tectonic setting, intense rainfall and frequent typhoons (Lin et al., 2004). Earthquakes can destabilise hillslopes, trigger rockfalls and increase sediment transport, causing widespread geomorphic change across mountain. The Taroko region of eastern Taiwan is characterised by steep relief, narrow valleys and highly fractured metamorphic rocks (Kuo and Brierley, 2013). Combined with intense rainfall from typhoons and frequent seismic activity, these conditions make the region highly susceptible to landslides and debris flows.
 
 The 3 April 2024 Hualien earthquake (Mw 7.4) generated extensive slope failures across eastern Taiwan, particularly within and around Taroko National Park. Detecting these changes rapidly is important for hazard assessment, infrastructure monitoring and environmental management.
 
 Remote sensing provides an effective way to monitor landslide activity over large areas where field surveys may be difficult or dangerous. This project therefore explores whether unsupervised classification of Sentinel-2 imagery can identify likely landslide areas and quantify landscape change through time.
-
-**References**
-
-- Lin, G. W., Chen, H., Hovius, N., Horng, M. J., Dadson, S., Meunier, P., & Lines, M. (2004). Effects of earthquake and cyclone sequencing on landsliding and fluvial sediment transfer in a mountain catchment. *Earth Surface Processes and Landforms*, 33(9), 1354–1373.
-- Keefer, D. K. (1984). Landslides caused by earthquakes. *Geological Society of America Bulletin*, 95(4), 406–421.
-- Dadson, S. J., Hovius, N., Chen, H., Dade, W. B., Hsieh, M. L., Willett, S. D., et al. (2004). Earthquake-triggered increase in sediment delivery from an active mountain belt. *Geology*, 32(8), 733–736.
 
 ---
 
@@ -193,7 +187,8 @@ The two charts show the total landslide candidate area and the newly detected la
 ![Image](images/total_landslide_candidate_area.png)
 <img src="images/newly_detected_landslide_candidate_area.png" width="610">
 
-
-
 The unsupervised approach provides a rapid and scalable method for preliminary landslide detection using freely available satellite imagery. However, further validation using official landslide inventories or high-resolution imagery would be required for operational hazard assessment.
 
+## References
+- Lin, G.-W., Chen, H., Hovius, N., Horng, M.-J., Dadson, S., Meunier, P., & Lines, M. (2008). Effects of earthquake and cyclone sequencing on landsliding and fluvial sediment transfer in a mountain catchment. Earth Surface Processes and Landforms, 33(9), 1354-1373. https://doi.org/10.1002/esp.1716
+- Kuo, C.-W., Brierley, G. (2013). The influence of landscape configuration upon patterns of sediment storage in a highly connected river system. Geomorphology, 180-181, 255–266. 10.1016/j.geomorph.2012.10.015. 
