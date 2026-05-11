@@ -161,7 +161,7 @@ The final section exports the results for further use.
 
 ## Results
 
-The figure below shows the results from 2021 to 2025. The first row presents the Sentinel-2 RGB composites, the second row shows the detected landslide candidates overlaid on the RGB images, and the third row presents the binary landslide masks. The workflow successfully identified areas with strong spectral and topographic characteristics consistent with landslide activity. These areas are mainly located on steep mountainous slopes. An increase in landslide candidate area was observed after the 2024 Hualien earthquake, suggesting that the earthquake had a significant impact on slope instability and landslide occurrence in the study area. However, because this method is unsupervised, the mapped areas should be interpreted as landslide candidates rather than confirmed landslides.
+The figure below shows the results from 2021 to 2025. The first row presents the Sentinel-2 RGB composites, the second row shows the detected landslide candidates overlaid on the RGB images, and the third row presents the binary landslide masks. The workflow successfully identified areas with strong spectral and topographic characteristics consistent with landslide activity. These areas are mainly located on steep mountainous slopes. An increase in landslide candidate area was observed after the 2024 Hualien earthquake, suggesting that the earthquake had a significant impact on slope instability and landslide occurrence in the study area. Moreover, in the 2024 RGB image, many landslides can be directly observed. However, because this method is unsupervised, the mapped areas should be interpreted as landslide candidates rather than confirmed landslides.
 
 ![Image](images/results.png)
 
