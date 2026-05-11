@@ -45,15 +45,12 @@ However, unsupervised classification may also produce false positives, such as r
 - Jain, A. K. (2010). Data clustering: 50 years beyond K-means. *Pattern Recognition Letters*, 31(8), 651–666.
 - MacQueen, J. (1967). Some methods for classification and analysis of multivariate observations. *Proceedings of the Fifth Berkeley Symposium on Mathematical Statistics and Probability*, 281–297.
 
-# Figure: Example of K-means Clustering
-
-<p align="center">
-  <img src="results/kmeans_workflow.png" width="700">
-</p>
-
+**Figure**
 Example workflow showing how K-means clustering groups pixels with similar spectral and topographic characteristics into clusters.
 
-## Sentinel-2 Satellite Data
+---
+
+**Sentinel-2 Satellite Data**
 
 This project uses imagery from the Sentinel-2 mission operated by the European Space Agency (ESA). Sentinel-2 provides multispectral optical imagery with spatial resolutions of 10–20 m and revisit times of approximately 5 days.
 
@@ -68,23 +65,14 @@ Key spectral indices used in this project include:
 | NDMI | Surface moisture |
 | BSI | Bare soil exposure |
 
-### References
-
+**References**
 - Drusch, M., Del Bello, U., Carlier, S., Colin, O., Fernandez, V., Gascon, F., et al. (2012). Sentinel-2: ESA’s optical high-resolution mission for GMES operational services. *Remote Sensing of Environment*, 120, 25–36.
 
 ---
 
-# Figure: Remote Sensing Workflow
+**Figure of Sentinel-2**
 
-<p align="center">
-  <img src="results/remote_sensing_workflow.png" width="800">
-</p>
-
-Workflow of the remote sensing and unsupervised classification process used in this project.
-
----
-
-# Getting Started
+## Getting Started
 
 ## Requirements
 
