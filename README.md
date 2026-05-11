@@ -90,7 +90,6 @@ The workflow will:
 - Detect landslide candidate areas
 - Export maps and CSV files
 
----
 ## How the Notebook Works
 
 This notebook detects and maps potential landslide areas in the Taroko Gorge / Hualien region using Sentinel-2 satellite imagery, spectral indices, topographic data, and annual change detection. The workflow compares conditions from 2021 to 2025 to identify both existing landslide candidates and newly developed landslide candidates, especially after the 2024 Hualien earthquake.
