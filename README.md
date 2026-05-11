@@ -196,6 +196,8 @@ The two charts show the total landslide candidate area and the newly detected la
 
 ![Image](images/total_landslide_candidate_area.png)
 ![Image](images/newly_detected_landslide_candidate_area.png)
+<img src="images/newly_detected_landslide_candidate_area.png" width="200">
+
 
 
 The unsupervised approach provides a rapid and scalable method for preliminary landslide detection using freely available satellite imagery. However, further validation using official landslide inventories or high-resolution imagery would be required for operational hazard assessment.
