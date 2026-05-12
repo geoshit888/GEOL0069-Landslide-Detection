@@ -39,6 +39,8 @@ Key spectral indices used in this project include:
 | NDMI | Surface moisture | (B8 - B11) / (B8 + B11) (Gao, 1996)|
 | BSI | Bare soil exposure | ((B11 + B4) - (B8 + B2)) / ((B11 + B4) + (B8 + B2)) (Nguyen et al., 2021) |
 
+![Image](images/Sentinel-2.png)
+
 ---
 
 **k means clustering for unsupervised learning**
