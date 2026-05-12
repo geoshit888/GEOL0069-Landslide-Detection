@@ -32,12 +32,12 @@ In this project, annual Sentinel-2 composites are created for each year from 202
 
 Key spectral indices used in this project include:
 
-| Index | Purpose | Bands |
+| Index | Purpose | Bands | 
 |---|---|---|
-| NDVI | Vegetation condition | (B8 - B4) / (B8 + B4) |
-| NBR | Vegetation disturbance / bare ground | (B8 - B12) / (B8 + B12)|
-| NDMI | Surface moisture | (B8 - B11) / (B8 + B11)|
-| BSI | Bare soil exposure | ((B11 + B4) - (B8 + B2)) / ((B11 + B4) + (B8 + B2))|
+| NDVI | Vegetation condition | (B8 - B4) / (B8 + B4) (Sentinel Hub, n.d) | 
+| NBR | Vegetation disturbance / bare ground | (B8 - B12) / (B8 + B12) (Sentinel Hub, n.d) |
+| NDMI | Surface moisture | (B8 - B11) / (B8 + B11) (Gao, 1996)|
+| BSI | Bare soil exposure | ((B11 + B4) - (B8 + B2)) / ((B11 + B4) + (B8 + B2)) (Nguyen et al., 2021) |
 
 ---
 
@@ -169,6 +169,11 @@ The unsupervised approach provides a rapid and scalable method for preliminary l
 
 ## References
 - Drusch, M., Del Bello, U., Carlier, S., Colin, O., Fernandez, V., Gascon, F., Hoersch, B., Isola, C., Laberinti, P., Martimort, P., Meygret, A., Spoto, F., Sy, O., Marchese, F., & Bargellini, P. (2012). Sentinel-2: ESA’s optical high-resolution mission for GMES operational services. Remote Sensing of Environment, 120, 25-36. https://doi.org/10.1016/j.rse.2011.11.026
+- Gao, B.-C. (1996). NDWI—A normalized difference water index for remote sensing of vegetation liquid water from space. Remote Sensing of Environment, 58(3), 257–266. https://doi.org/10.1016/S0034-4257(96)00067-3
 - Kuo, C.-W., Brierley, G. (2013). The influence of landscape configuration upon patterns of sediment storage in a highly connected river system. Geomorphology, 180-181, 255–266. 10.1016/j.geomorph.2012.10.015
 - Lin, G.-W., Chen, H., Hovius, N., Horng, M.-J., Dadson, S., Meunier, P., & Lines, M. (2008). Effects of earthquake and cyclone sequencing on landsliding and fluvial sediment transfer in a mountain catchment. Earth Surface Processes and Landforms, 33(9), 1354-1373. https://doi.org/10.1002/esp.1716
 - MacQueen, J. (1967). Some methods for classification and analysis of multivariate observations. In L. M. Le Cam & J. Neyman (Eds.), Proceedings of the Fifth Berkeley Symposium on Mathematical Statistics and Probability (Vol. 1, pp. 281–297). University of California Press.
+- Nguyen, C. T., Chidthaisong, A., Kieu Diem, P., & Huo, L.-Z. (2021). A modified bare soil index to identify bare land features during agricultural fallow-period in Southeast Asia using Landsat 8. Land, 10(3), Article 231. https://doi.org/10.3390/land10030231
+- Sentinel Hub. (n.d.). Normalized difference vegetation index. Sentinel Hub custom scripts. https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndvi/
+- Sentinel Hub. (n.d.). NBR-RAW (Normalized Burn Ratio). Sentinel Hub custom scripts. https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/nbr/
+
