@@ -184,7 +184,7 @@ The table below gives an approximate estimate for one full notebook run, **20 W*
 | Masking, area calculation and visualisation | 25 min | 0.0050 | 0.90 | 0.0015 |
 | **Total** | **50 min** | **0.0100** | **1.80** | **0.0030** |
 
-Overall, the emissions from this analysis are very small. A satellite-based workflow can also reduce the need for repeated field visits to remote or hazardous landslide areas. However, this estimate only covers the approximate notebook runtime and does not fully include Google Earth Engine server-side processing, satellite operation or data-centre infrastructure.
+Overall, the emissions from this analysis are very small. A satellite-based workflow can also reduce the need for repeated field visits to remote or hazardous landslide areas. However, this estimate only covers the approximate notebook runtime and does not fully include Google Earth Engine server-side processing, satellite operation.
 
 ## References
 - Drusch, M., Del Bello, U., Carlier, S., Colin, O., Fernandez, V., Gascon, F., Hoersch, B., Isola, C., Laberinti, P., Martimort, P., Meygret, A., Spoto, F., Sy, O., Marchese, F., & Bargellini, P. (2012). Sentinel-2: ESA’s optical high-resolution mission for GMES operational services. Remote Sensing of Environment, 120, 25-36. https://doi.org/10.1016/j.rse.2011.11.026
