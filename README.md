@@ -170,6 +170,22 @@ The two charts show the total landslide candidate area and the newly detected la
 
 The unsupervised approach provides a rapid and scalable method for preliminary landslide detection using freely available satellite imagery. However, further validation using official landslide inventories or high-resolution imagery would be required for operational hazard assessment.
 
+## Environmental Cost
+
+This project considers the environmental cost of cloud-based remote-sensing analysis. Although the workflow uses Google Earth Engine and Google Colab, its computational footprint is expected to be low because it applies K-means clustering rather than heavy deep-learning training. In the notebook, K-means is run with **8 clusters** and about **15,984 sampled pixels** after cloud masking.
+
+The table below gives an approximate estimate for one full notebook run, **20 W** power use, **0.18 kg CO₂e/kWh**, and **£0.30/kWh** electricity cost. Actual values may vary depending on runtime, hardware and cloud-server location.
+
+| Stage | Runtime | Energy (kWh) | CO₂e (g) | Cost (£) |
+|---|---:|---:|---:|---:|
+| Image loading and cloud masking | 12 min | 0.0024 | 0.43 | 0.0007 |
+| Spectral index processing | 8 min | 0.0016 | 0.29 | 0.0005 |
+| K-means clustering | 5 min | 0.0010 | 0.18 | 0.0003 |
+| Masking, area calculation and visualisation | 25 min | 0.0050 | 0.90 | 0.0015 |
+| **Total** | **50 min** | **0.0100** | **1.80** | **0.0030** |
+
+Overall, the emissions from this analysis are very small. A satellite-based workflow can also reduce the need for repeated field visits to remote or hazardous landslide areas. However, this estimate only covers the approximate notebook runtime and does not fully include Google Earth Engine server-side processing, satellite operation or data-centre infrastructure.
+
 ## References
 - Drusch, M., Del Bello, U., Carlier, S., Colin, O., Fernandez, V., Gascon, F., Hoersch, B., Isola, C., Laberinti, P., Martimort, P., Meygret, A., Spoto, F., Sy, O., Marchese, F., & Bargellini, P. (2012). Sentinel-2: ESA’s optical high-resolution mission for GMES operational services. Remote Sensing of Environment, 120, 25-36. https://doi.org/10.1016/j.rse.2011.11.026
 - Gao, B.-C. (1996). NDWI—A normalized difference water index for remote sensing of vegetation liquid water from space. Remote Sensing of Environment, 58(3), 257–266. https://doi.org/10.1016/S0034-4257(96)00067-3
