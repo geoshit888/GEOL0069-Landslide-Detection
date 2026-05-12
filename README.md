@@ -26,18 +26,18 @@ Remote sensing provides an effective way to monitor landslide activity over larg
 
 **Sentinel-2 Satellite Data**
 
-This project uses imagery from the Sentinel-2 mission operated by the European Space Agency (ESA). Sentinel-2 provides multispectral optical imagery with spatial resolutions of 10–20 m and revisit times of approximately 5 days.
+This project uses Sentinel-2 Level-2A surface reflectance imagery from the European Space Agency’s Copernicus programme. Sentinel-2 is a multispectral Earth-observation mission designed for high-resolution land monitoring. The satellite carries a MultiSpectral Instrument (MSI), which records reflected sunlight from the Earth’s surface in visible, near-infrared and shortwave-infrared wavelengths. These wavelengths are useful because different land surfaces, such as vegetation, bare soil, water and rock, reflect light differently. Sentinel-2 provides 13 spectral bands with spatial resolutions of 10 m, 20 m and 60 m, a 290 km swath width and a revisit time of about 5 days, making it suitable for monitoring rapid landscape changes such as landslides after earthquakes or typhoons (Drusch et al., 2012)
 
-The satellite includes spectral bands useful for vegetation, soil and moisture analysis, making it highly suitable for landslide detection and environmental monitoring.
+In this project, annual Sentinel-2 composites are created for each year from 2021 to 2025. Cloud and shadow pixels are masked before calculating spectral indices. These indices help highlight vegetation loss, exposed bare soil, surface moisture and landscape disturbance, which are important indicators of possible landslide scars.
 
 Key spectral indices used in this project include:
 
-| Index | Purpose |
-|---|---|
-| NDVI | Vegetation condition |
-| NBR | Vegetation disturbance / bare ground |
-| NDMI | Surface moisture |
-| BSI | Bare soil exposure |
+| Index | Purpose | Bands |
+|---|---|---|
+| NDVI | Vegetation condition | (B8 - B4) / (B8 + B4) |
+| NBR | Vegetation disturbance / bare ground | (B8 - B12) / (B8 + B12)|
+| NDMI | Surface moisture | (B8 - B11) / (B8 + B11)|
+| BSI | Bare soil exposure | ((B11 + B4) - (B8 + B2)) / ((B11 + B4) + (B8 + B2))|
 
 **References**
 - Drusch, M., Del Bello, U., Carlier, S., Colin, O., Fernandez, V., Gascon, F., et al. (2012). Sentinel-2: ESA’s optical high-resolution mission for GMES operational services. *Remote Sensing of Environment*, 120, 25–36.
