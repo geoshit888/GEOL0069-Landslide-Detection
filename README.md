@@ -50,7 +50,7 @@ Key spectral indices used in this project include:
 
 K-means clustering is an unsupervised machine-learning method that groups data into a chosen number of clusters based on similarity. It works by assigning each data point to the nearest cluster centre, then repeatedly updating the cluster centres until the groups become stable (MacQueen, 1967). Because it does not require labelled training data, K-means is useful when the exact land-cover classes are unknown. 
 
-In this project, K-means clustering is applied to Sentinel-2 spectral indices, including NDVI, NBR, NDMI and BSI, together with topographic information such as slope and elevation. Pixels with similar spectral and terrain characteristics are grouped into clusters, and clusters showing low vegetation, low moisture and high bare-soil signals are interpreted as possible landslide or newly exposed ground areas. Therefore, K-means is used as an exploratory method to identify landslide candidate areas in Taroko before and after the 2024 Hualien earthquake.
+In this project, K-means clustering is applied to Sentinel-2 spectral indices, including NDVI, NBR, NDMI and BSI, together with topographic information such as slope and elevation. Pixels with similar spectral and terrain characteristics are grouped into clusters, and clusters showing low vegetation, low moisture and high bare-soil signals are interpreted as possible landslide or newly exposed ground areas. 
 
 ## Getting Started
 
