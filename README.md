@@ -47,6 +47,9 @@ K-means clustering is an unsupervised machine-learning method that groups data i
 
 In this project, K-means clustering is applied to Sentinel-2 spectral indices, including NDVI, NBR, NDMI and BSI, together with topographic information such as slope and elevation. Pixels with similar spectral and terrain characteristics are grouped into clusters, and clusters showing low vegetation, low moisture and high bare-soil signals are interpreted as possible landslide or newly exposed ground areas. 
 
+<img src="images/Research_area.png" width="300">
+Figure X: K-means Workflow in this project
+
 ## Getting Started
 
 1. Download the .ipynb notebook from this repository
