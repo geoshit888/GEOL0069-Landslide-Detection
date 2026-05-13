@@ -11,6 +11,13 @@ Using Google Earth Engine and K-means clustering, the workflow analyses yearly s
 <img src="images/Research_area.png" width="300">
 Figure 1: Area of Interest (red polygon)         
 
+**Problem Statement**
+
+Landslides are a major natural hazard in Taiwan due to steep mountainous terrain, frequent typhoons and active tectonic activity. Following the 3 April 2024 Hualien earthquake (Mw 7.4), large areas of slope failure and exposed bare ground were observed across the Taroko region. Rapid identification of these landslide-affected areas is important for hazard assessment, infrastructure monitoring and environmental management.
+
+Traditional field-based landslide mapping can be time-consuming, expensive and difficult in remote mountainous terrain. This project therefore investigates whether freely available Sentinel-2 satellite imagery and unsupervised machine-learning techniques can automatically detect potential landslide areas without requiring manually labelled training data.
+
+Using Google Earth Engine and K-means clustering, the project analyses annual satellite composites from 2021–2025 to identify landscape disturbance, vegetation loss and newly exposed ground associated with possible landslide activity before and after the 2024 Hualien earthquake.
 
 ## Background
 
