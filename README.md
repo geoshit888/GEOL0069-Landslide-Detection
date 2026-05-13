@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This project applies unsupervised machine learning and Sentinel-2 satellite imagery to identify potential landslide areas in Taroko, eastern Taiwan between 2021 and 2025 (**Figure 1**). The study aims to investigate how surface conditions changed before and after the 2024 Hualien earthquake, with particular focus on earthquake-triggered landslides and newly exposed bare ground.
+This project applies unsupervised machine learning and Sentinel-2 satellite imagery to identify potential landslide areas in Taroko, eastern Taiwan between 2021 and 2025. The study aims to investigate how surface conditions changed before and after the 2024 Hualien earthquake, with particular focus on earthquake-triggered landslides and newly exposed bare ground.
 
 Using Google Earth Engine and K-means clustering, the workflow analyses yearly satellite composites and spectral indices such as NDVI, NBR, NDMI and BSI to automatically classify landslide candidate areas without requiring manually labelled training data. The project demonstrates how freely available satellite imagery and cloud-based geospatial analysis can support rapid environmental assessment in mountainous hazard-prone regions.
 
@@ -40,6 +40,7 @@ Key spectral indices used in this project include:
 | BSI | Bare soil exposure | ((B11 + B4) - (B8 + B2)) / ((B11 + B4) + (B8 + B2)) (Nguyen et al., 2021) |
 
 ![Image](images/Sentinel-2.png)
+Figure 2: Overview of the Sentinel-2
 
 ---
 
@@ -50,7 +51,7 @@ K-means clustering is an unsupervised machine-learning method that groups data i
 In this project, K-means clustering is applied to Sentinel-2 spectral indices, including NDVI, NBR, NDMI and BSI, together with topographic information such as slope and elevation. Pixels with similar spectral and terrain characteristics are grouped into clusters, and clusters showing low vegetation, low moisture and high bare-soil signals are interpreted as possible landslide or newly exposed ground areas. 
 
 <img src="images/kmeans_workflow.png" width="500">
-Figure X: K-means Workflow for this project
+Figure 3: Workflow of the K-means unsupervised classification approach used for landslide candidate detection from Sentinel-2 imagery and topographic data
 
 ## Getting Started
 
@@ -164,11 +165,14 @@ The final section exports the results for further use.
 The figure below shows the results from 2021 to 2025. The first row presents the Sentinel-2 RGB composites, the second row shows the detected landslide candidates overlaid on the RGB images, and the third row presents the binary landslide masks. The workflow successfully identified areas with strong spectral and topographic characteristics consistent with landslide activity. These areas are mainly located on steep mountainous slopes. An increase in landslide candidate area was observed after the 2024 Hualien earthquake, suggesting that the earthquake had a significant impact on slope instability and landslide occurrence in the study area. Moreover, in the 2024 RGB image, many landslides can be directly observed. However, because this method is unsupervised, the mapped areas should be interpreted as landslide candidates rather than confirmed landslides.
 
 ![Image](images/results.png)
+Figure 4: Annual Sentinel-2 RGB composites (top row), landslide candidate overlays (middle row), and binary landslide masks (bottom row) for 2021–2025 in the Taroko study area. Increased landslide activity and exposed bare ground are visible after the 2024 Hualien earthquake.
 
 The two charts show the total landslide candidate area and the newly detected landslide candidate area for each year. The total candidate area represents all pixels classified as potential landslides in a given year, whilst the new candidate area represents locations that were detected in the current year but were not identified in the previous year. The new candidate analysis is important because it highlights newly developed or recently exposed landslide features, rather than areas that remained persistently bare or unstable across multiple years. This helps distinguish recent slope failures, particularly those triggered by extreme events such as the 2024 Hualien earthquake, from older pre-existing landslide scars or long-term exposed surfaces.
 
 ![Image](images/total_landslide_candidate_area.png)
+Figure 5: Total annual landslide candidate area detected between 2021 and 2025.
 <img src="images/newly_detected_landslide_candidate_area.png" width="610">
+Figure 6: Newly detected landslide candidate area for each year from 2021 to 2025, highlighting areas of recent surface disturbance and potential earthquake-triggered slope failure.
 
 The unsupervised approach provides a rapid and scalable method for preliminary landslide detection using freely available satellite imagery. However, further validation using official landslide inventories or high-resolution imagery would be required for operational hazard assessment.
 
