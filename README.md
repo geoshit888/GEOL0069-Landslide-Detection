@@ -180,11 +180,10 @@ The two charts show the total landslide candidate area and the newly detected la
 
 ![Image](images/total_landslide_candidate_area.png)
 Figure 5: Total annual landslide candidate area detected between 2021 and 2025.         
-
+<br>
 <img src="images/newly_detected_landslide_candidate_area.png" width="610">
 Figure 6: Newly detected landslide candidate area for each year from 2021 to 2025, highlighting areas of recent surface disturbance and potential earthquake-triggered slope failure.
-
-
+<br>
 The unsupervised approach provides a rapid and scalable method for preliminary landslide detection using freely available satellite imagery. However, further validation using official landslide inventories or high-resolution imagery would be required for operational hazard assessment.
 
 ## Environmental Cost
