@@ -179,13 +179,13 @@ Figure 4: Annual Sentinel-2 RGB composites (top row), landslide candidate overla
 The two charts show the total landslide candidate area and the newly detected landslide candidate area for each year. The total candidate area represents all pixels classified as potential landslides in a given year, whilst the new candidate area represents locations that were detected in the current year but were not identified in the previous year. The new candidate analysis is important because it highlights newly developed or recently exposed landslide features, rather than areas that remained persistently bare or unstable across multiple years. This helps distinguish recent slope failures, particularly those triggered by extreme events such as the 2024 Hualien earthquake, from older pre-existing landslide scars or long-term exposed surfaces.
 
 ![Image](images/total_landslide_candidate_area.png)
-<br>
 Figure 5: Total annual landslide candidate area detected between 2021 and 2025.         
 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="images/newly_detected_landslide_candidate_area.png" width="610">
-<br>
 Figure 6: Newly detected landslide candidate area for each year from 2021 to 2025, highlighting areas of recent surface disturbance and potential earthquake-triggered slope failure.
 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;
 The unsupervised approach provides a rapid and scalable method for preliminary landslide detection using freely available satellite imagery. However, further validation using official landslide inventories or high-resolution imagery would be required for operational hazard assessment.
 
 ## Environmental Cost
