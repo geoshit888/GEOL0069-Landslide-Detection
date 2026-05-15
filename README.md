@@ -195,6 +195,9 @@ The two charts show the total landslide candidate area and the newly detected la
 <br>
 
 The unsupervised approach provides a rapid and scalable method for preliminary landslide detection using freely available satellite imagery. However, further validation using official landslide inventories or high-resolution imagery would be required for operational hazard assessment.
+
+Results can be viewed here: https://drive.google.com/drive/folders/1QsUaiulaZ-rqBIpV9ss1SdeycQKbz6xf?usp=drive_link
+
 ## Environmental Cost
 
 This project considers the environmental cost of cloud-based remote-sensing analysis. Although the workflow uses Google Earth Engine and Google Colab, its computational footprint is expected to be low because it applies K-means clustering rather than heavy deep-learning training. In the notebook, K-means is run with **8 clusters** and about **15,984 sampled pixels** after cloud masking.
