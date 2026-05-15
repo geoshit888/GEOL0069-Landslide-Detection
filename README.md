@@ -1,6 +1,18 @@
 # Landslide Detection Using Unsupervised Classification
 ### A Case Study in Taroko, Hualien, Taiwan (2021–2025)
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Background](#background)
+- [Getting Started](#getting-started)
+- [How the Notebook Works](#how-the-notebook-works)
+- [Results](#results)
+- [Code Explaination Video](#code-explaination-video)
+- [Environmental Cost](#environmental-cost)
+- [References](#references)
+
+
 ## Introduction
 
 This project applies unsupervised machine learning and Sentinel-2 satellite imagery to identify potential landslide areas in Taroko, eastern Taiwan between 2021 and 2025. The study aims to investigate how surface conditions changed before and after the 2024 Hualien earthquake, with particular focus on earthquake-triggered landslides and newly exposed bare ground.
