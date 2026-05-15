@@ -230,6 +230,14 @@ The table below gives an approximate estimate for one full notebook run, **20 W*
 
 Overall, the emissions from this analysis are very small. A satellite-based workflow can also reduce the need for repeated field visits to remote or hazardous landslide areas. However, this estimate only covers the approximate notebook runtime and does not fully include Google Earth Engine server-side processing, satellite operation.
 
+## Acknowledgement
+
+This project was completed by **Ray Wong** as the final project for **GEOL0069: Artificial Intelligence for Earth Observation (AI4EO) 2025/26** at **UCL**, as part of the **MSc Geoscience** programme.
+
+Author: Ray Wong  
+Email: rayjay0727@gmail.com  
+Programme: UCL MSc Geoscience
+
 ## References
 - Drusch, M., Del Bello, U., Carlier, S., Colin, O., Fernandez, V., Gascon, F., Hoersch, B., Isola, C., Laberinti, P., Martimort, P., Meygret, A., Spoto, F., Sy, O., Marchese, F., & Bargellini, P. (2012). Sentinel-2: ESA’s optical high-resolution mission for GMES operational services. Remote Sensing of Environment, 120, 25-36. https://doi.org/10.1016/j.rse.2011.11.026
 - Gao, B.-C. (1996). NDWI—A normalized difference water index for remote sensing of vegetation liquid water from space. Remote Sensing of Environment, 58(3), 257–266. https://doi.org/10.1016/S0034-4257(96)00067-3
