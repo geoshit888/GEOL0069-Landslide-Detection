@@ -198,6 +198,10 @@ The unsupervised approach provides a rapid and scalable method for preliminary l
 
 Results can be viewed here: https://drive.google.com/drive/folders/1QsUaiulaZ-rqBIpV9ss1SdeycQKbz6xf?usp=drive_link
 
+## Code Explaination Video
+
+[![Watch the video]([https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID](https://www.youtube.com/watch?v=Ch2I5ZvQfto))
+
 ## Environmental Cost
 
 This project considers the environmental cost of cloud-based remote-sensing analysis. Although the workflow uses Google Earth Engine and Google Colab, its computational footprint is expected to be low because it applies K-means clustering rather than heavy deep-learning training. In the notebook, K-means is run with **8 clusters** and about **15,984 sampled pixels** after cloud masking.
