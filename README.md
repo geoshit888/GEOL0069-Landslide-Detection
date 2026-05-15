@@ -11,6 +11,7 @@
 - [Code Explaination Video](#code-explaination-video)
 - [Environmental Cost](#environmental-cost)
 - [References](#references)
+- [Acknowledgement](#Acknowledgement)
 
 
 ## Introduction
@@ -232,7 +233,7 @@ Overall, the emissions from this analysis are very small. A satellite-based work
 
 ## Acknowledgement
 
-This project was completed by **Ray Wong** as the final project for **GEOL0069: Artificial Intelligence for Earth Observation (AI4EO) 2025/26** at **UCL**, as part of the **MSc Geoscience** programme.
+This project was completed by **Ray Wong** as the final project for **GEOL0069: Artificial Intelligence for Earth Observation (AI4EO) 2025/26** at **UCL**.
 
 Author: Ray Wong  
 Email: rayjay0727@gmail.com  
