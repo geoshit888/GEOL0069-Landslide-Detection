@@ -214,7 +214,8 @@ Results can be viewed here: https://drive.google.com/drive/folders/1QsUaiulaZ-rq
 
 ## Code Explaination Video
 
-[![Watch the video]([https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID](https://www.youtube.com/watch?v=Ch2I5ZvQfto))
+[[![Watch the video]([https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/maxresdefault.jpg)]
+](https://www.youtube.com/watch?v=Ch2I5ZvQfto)
 
 ## Environmental Cost
 
